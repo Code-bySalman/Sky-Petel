@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+ "build": "eslint-disable  && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
