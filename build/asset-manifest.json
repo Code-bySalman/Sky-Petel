@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.68cba16f.css",
+    "main.js": "/static/js/main.43b7edff.js",
+    "static/media/missionimg.jpg": "/static/media/missionimg.dd7aba53060cda91869b.jpg",
+    "static/media/corevalue.jpg": "/static/media/corevalue.e1af5ca84feb44ddbaf7.jpg",
+    "static/media/Homepage.jpg": "/static/media/Homepage.b7c1e0101817c2c0f1e0.jpg",
+    "static/media/missionSlider.jpg": "/static/media/missionSlider.5033c773a2b6305b04dd.jpg",
+    "static/media/logo.jpg": "/static/media/logo.8fc5a8df3f64669c6cda.jpg",
+    "index.html": "/index.html",
+    "main.68cba16f.css.map": "/static/css/main.68cba16f.css.map",
+    "main.43b7edff.js.map": "/static/js/main.43b7edff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68cba16f.css",
+    "static/js/main.43b7edff.js"
+  ]
+}
