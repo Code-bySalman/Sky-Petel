@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const products = [
-  { id: 1, img: "/assets/lemon.jpg" },
+  { id: 1,  img: "/assets/lemon.jpg" },
   { id: 2, img: "/assets/red.jpg" },
   { id: 3, img: "/assets/orange.jpg" },
-  { id: 4, img: "/assets/ABC.jpg" },
-  { id: 5, img: "/assets/Product5.jpg" },
+  { id: 4, name: "Pro-SG Whey Protien", img: "/assets/Product4.jpg" },
+  { id: 5,  name: "Cocoz - Coconut Water Powder", img: "/assets/Product5.jpg" },
 ];
 
 const OurProducts = () => {

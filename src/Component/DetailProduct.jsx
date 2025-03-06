@@ -1,103 +1,54 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import { products } from "../data/products"; // Import products array
 
 const DetailProduct = () => {
   const { productId } = useParams();
   const id = parseInt(productId, 10);
+  const product = products.find((p) => p.id === id);
 
-  const isEnergyDrink = [1, 2, 3].includes(id);
-
-  // Flavor descriptions
-  const flavors = [
-    { name: "SG-Lyte Lemon", image: "lemon.jpg", description: "A tangy burst of lemon freshness to fuel your energy." },
-    { name: "SG-Lyte Apple", image: "red.jpg", description: "A bold and intense red berry flavor with an electrifying taste." },
-    { name: "SG-Lyte Orange", image: "orange.jpg", description: "A citrus explosion packed with natural orange zest and energy." }
-  ];
-
-  const [selectedFlavor, setSelectedFlavor] = useState(null);
+  if (!product) {
+    return <div className="text-center text-xl mt-10">Product not found</div>;
+  }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 py-12 px-6 flex flex-col items-center gap-10">
-      {isEnergyDrink ? (
-        flavors.map((flavor, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="bg-white shadow-2xl rounded-2xl p-6 flex items-center max-w-3xl w-full overflow-hidden"
-          >
-            <motion.img
-              src={`/assets/${flavor.image}`}
-              alt={flavor.name}
-              className="w-52 h-52 object-cover rounded-lg shadow-md transform hover:scale-105 transition"
-            />
-            <div className="flex-1 px-6 text-center">
-              <h2 className="text-3xl font-bold text-gray-900">{flavor.name}</h2>
-              <p className="text-lg text-gray-600 mt-2">{flavor.description}</p>
-              <button
-                className="mt-4 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition"
-                onClick={() => setSelectedFlavor(flavor)}
-              >
-                View More
-              </button>
-            </div>
-          </motion.div>
-        ))
-      ) : (
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="bg-white shadow-2xl rounded-2xl p-6 flex items-center max-w-3xl w-full overflow-hidden"
-        >
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 px-6 py-12">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        className="w-full max-w-3xl bg-white shadow-2xl rounded-xl overflow-hidden"
+      >
+        <div className="flex flex-col md:flex-row items-center">
           <motion.img
-            src={`/assets/Product${id}.jpg`}
-            alt={`Product ${id}`}
-            className="w-52 h-52 object-cover rounded-lg shadow-md transform hover:scale-105 transition"
+            src={product.img}
+            alt={product.name}
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="w-full md:w-1/3 object-cover h-64 md:h-full"
           />
-          <div className="flex-1 px-6 text-center">
-            <h2 className="text-3xl font-bold text-gray-900">Product {id}</h2>
-            <p className="text-lg text-gray-600 mt-2">Detailed description of Product {id}...</p>
-          </div>
-        </motion.div>
-      )}
-
-      {/* FLAVOR MODAL */}
-      <AnimatePresence>
-        {selectedFlavor && (
-          <motion.div
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setSelectedFlavor(null)}
-          >
-            <motion.div
-              className="bg-white rounded-lg shadow-xl p-6 max-w-sm text-center relative"
-              initial={{ y: 50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 50, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
+          <div className="p-6 text-center md:text-left flex-1">
+            <motion.h2
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3 }}
+              className="text-3xl font-bold text-gray-900"
             >
-              <h3 className="text-2xl font-semibold text-gray-900">{selectedFlavor.name}</h3>
-              <p className="text-gray-600 mt-2">{selectedFlavor.description}</p>
-              <img
-                src={`/assets/${selectedFlavor.image}`}
-                alt={selectedFlavor.name}
-                className="w-32 h-32 rounded-lg mx-auto mt-4 shadow-md"
-              />
-              <button
-                className="mt-4 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition"
-                onClick={() => setSelectedFlavor(null)}
-              >
-                Close
-              </button>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+              {product.name}
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="text-lg text-gray-600 mt-2"
+            >
+              {product.description}
+            </motion.p>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 };
