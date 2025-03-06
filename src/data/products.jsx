@@ -30,5 +30,11 @@ export const products = [
       img: "/assets/Product5.jpg",
       description: "Pure coconut water powder for hydration and electrolyte balance on the go."
     },
+    { 
+      id: 6, 
+      name: "Vita-SG Tablet", 
+      img: "/assets/Product6.jpg",
+      description: "Mrthylcobalamin,Pyridoxal 5-Phosphate, L-Methylfolate & Vitamin D3 Tablets."
+    },
   ];
   

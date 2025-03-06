@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { products } from "../data/products"; // Import products array
+import { products } from "../data/products"; 
 
 const DetailProduct = () => {
   const { productId } = useParams();
