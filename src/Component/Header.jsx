@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import myImage from "../util/logo.jpg";
+import logo from "../util/logo.jpg";
 import { NavLink, useLocation, Link } from "react-router-dom";
 import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
@@ -43,7 +43,7 @@ const Header = () => {
     <header className="flex flex-col md:flex-row justify-between items-center p-4 bg-blue-100">
       <div className="flex items-center">
         <NavLink to={"/"}>
-          <img src={myImage} alt="logo-img" className="h-[45px] w-[95px] mr-5 bg-transparent" />
+          <img src={logo} alt="logo-img" className="h-[45px] w-[95px] mr-5 bg-transparent" />
         </NavLink>
         <h1
           style={{ color: "#1E0065" }}
