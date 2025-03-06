@@ -1,73 +1,69 @@
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const products = [
-  {
-    name: 'Product 1',
-    description: 'High-quality product 1 for healthcare needs.',
-    img: '../assets/Product1.jpg',
-  },
-  {
-    name: 'Product 2',
-    description: 'Innovative product 2 designed for well-being.',
-    img: '/assets/Product2.jpg',
-  },
-  {
-    name: 'Product 3',
-    description: 'Reliable product 3 to enhance your lifestyle.',
-    img: '/assets/Product3.jpg',
-  },
-  {
-    name: 'Product 4',
-    description: 'State-of-the-art product 4 for optimal health.',
-    img: '/assets/Product4.jpg',
-  },
+  { id: 1, img: "/assets/lemon.jpg" },
+  { id: 2, img: "/assets/red.jpg" },
+  { id: 3, img: "/assets/orange.jpg" },
+  { id: 4, img: "/assets/ABC.jpg" },
+  { id: 5, img: "/assets/Product5.jpg" },
 ];
 
 const OurProducts = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="bg-gradient-to-b from-blue-50 to-blue-100 py-16 px-5">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-5xl font-bold text-blue-900">Our Products</h2>
-        <p className="text-lg text-blue-600 mt-4 max-w-3xl mx-auto">
-          Explore our premium healthcare products designed to improve your quality of life.
-          Stay tuned for more innovative solutions!
-        </p>
+    <div className="bg-white py-16 px-5 flex flex-col items-center">
+      <h2 className="text-4xl font-bold text-gray-900 text-center">Our Products</h2>
+      <p className="text-lg text-gray-600 mt-4 text-center max-w-3xl">
+        Explore our premium healthcare products with a sleek, minimal design.
+      </p>
 
-       
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-          {products.map((product, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-            >
-              <div className="relative">
-                <img 
-                  src={product.img} 
-                  alt={product.name} 
-                  className="w-full h-60 object-fill"
-                />
-                <div className="absolute inset-0 bg-gray-900 bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
-                  <p className="text-white text-lg font-semibold">View</p>
-                </div>
-              </div>
-              <div className="p-5 text-center">
-                <h3 className="text-xl font-semibold text-blue-900">{product.name}</h3>
-                <p className="text-md text-blue-600 mt-2">{product.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* New Products Section */}
-        <div className="mt-12">
-          <div 
-            className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="bg-white rounded-lg p-10 mt-12 w-full  max-w-4xl flex justify-center shadow-lg gap-5"
+      >
+        {products.map((product, index) => (
+          <motion.div
+            key={product.id}
+            className="relative group cursor-pointer"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
           >
-            <h3 className="text-2xl font-semibold text-blue-900">New Products Coming Soon!</h3>
-            <p className="text-md text-blue-600 mt-2">Stay tuned for exciting updates.</p>
-          </div>
-        </div>
-      </div>
+            {/* Product Image */}
+            <img
+              src={product.img}
+              alt={`Product ${index + 1}`}
+              className="w-[120px] md:w-[150px] lg:w-[180px] h-full rounded-lg transition-transform duration-300 hover:scale-105 
+                         shadow-md mix-blend-multiply filter brightness-125"
+            />
+
+            {/* Hover Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 
+                            group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              <button
+                onClick={() => navigate(`/detail-product/${product.id}`)}
+                className="bg-white text-black px-4 py-2 font-semibold rounded-md shadow-md hover:bg-gray-200 transition"
+              >
+                Know More
+              </button>
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: products.length * 0.2 }}
+        className="text-center mt-12 text-gray-900 text-xl font-semibold"
+      >
+        <p>New Products Coming Soon!</p>
+      </motion.div>
     </div>
   );
 };

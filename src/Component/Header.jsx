@@ -144,19 +144,7 @@ const Header = () => {
           </li>
 
           {/* Certifications, Our Products, and Contact Us Links */}
-          <li>
-            <NavLink
-              to="/certification"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-custom-purple font-bold text-[18px] md:text-[20px] border-b-2 border-blue-500"
-                  : "text-custom-purple font-semibold text-[18px] md:text-[20px] hover:text-blue-500 transition duration-300"
-              }
-            >
-              Certifications
-            </NavLink>
-          </li>
-
+          
           <li>
             <NavLink
               to="/our-products"
