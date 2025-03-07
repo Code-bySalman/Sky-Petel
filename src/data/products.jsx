@@ -1,40 +1,45 @@
+import lemon from "../util/lemon.jpg";
+import apple from "../util/apple.jpg";
+import orange from "../util/orange.jpg";
+import SGPRO from "../util/SGPRO.jpg";
+import product5 from "../util/Product5.jpg";
+import product6 from "../util/Product6.jpg";
 
 export const products = [
     { 
       id: 1, 
       name: "SG-Lyte Lemon", 
-      img: "/assets/lemon.jpg",
-      description: "A refreshing lemon-flavored hydration drink packed with electrolytes and vitamins."
+      img: lemon,
+      description: "SG-Lyte Electrolyute range that helps in Nausea,Vomitting. Enriched with vitamin C  and contains minerals like:- Sodium, Potassium & Chloride"
     },
     { 
       id: 2, 
       name: "SG-Lyte Apple", 
-      img: "/assets/red.jpg",
-      description: "A crisp apple-infused energy drink to keep you refreshed and revitalized."
+      img: apple,
+      description: "Heat vexhaustion leads to loss of Electrolytes,Energy & Fluid. Replenish with SG Lyte -Apple"
     },
     { 
       id: 3, 
       name: "SG-Lyte Orange", 
-      img: "/assets/orange.jpg",
-      description: "A tangy orange hydration booster for instant energy and recovery."
+      img: orange,
+      description: "SG-Lyte Electrolyte range that helps in fever like Typhoid,Dengue. Enriched with Vitamins & Minerals. Energy-102Kcal*"
     },
     { 
       id: 4, 
       name: "Pro-SG Whey Protein", 
-      img: "/assets/Product4.jpg",
-      description: "High-quality whey protein to fuel muscle growth and post-workout recovery."
+      img: SGPRO,
+      description: "High-quality whey protein to fuel muscle growth and post-workout recovery. Enriched with Whey Protien,DHA & Multivitamins Powder. Enhances growth and builds immunity"
     },
     { 
       id: 5, 
       name: "Cocoz - Coconut Water Powder", 
-      img: "/assets/Product5.jpg",
-      description: "Pure coconut water powder for hydration and electrolyte balance on the go."
+      img: product5,
+      description: "Drink Anywhere, Anytime, Just Add Water. Daily Hydration Premix Contaiins essential minerals."
     },
     { 
       id: 6, 
       name: "Vita-SG Tablet", 
-      img: "/assets/Product6.jpg",
-      description: "Mrthylcobalamin,Pyridoxal 5-Phosphate, L-Methylfolate & Vitamin D3 Tablets."
+      img: product6,
+      description: "Methylcobalamin, Pyridoxal 5-Phosphate, L-Methylfolate & Vitamin D3 Tablets."
     },
-  ];
-  
+];

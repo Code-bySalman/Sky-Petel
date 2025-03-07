@@ -2,13 +2,20 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
+import lemon from "../util/lemon.jpg";
+import apple from "../util/apple.jpg";
+import orange from "../util/orange.jpg";
+import product4 from "../util/Product4.jpg";
+import product5 from "../util/Product5.jpg";
+import product6 from "../util/Product6.jpg";
+
 const products = [
-  { id: 1, img: "/assets/lemon.jpg" },
-  { id: 2, img: "/assets/apple.jpg" },
-  { id: 3, img: "/assets/orange.jpg" },
-  { id: 4, name: "Pro-SG Whey Protein", img: "/assets/Product4.jpg" },
-  { id: 5, name: "Cocoz - Coconut Water Powder", img: "/assets/Product5.jpg" },
-  { id: 6, name: "Vita-SG Tablets", img: "/assets/def.jpg" },
+  { id: 1, img: lemon },
+  { id: 2, img: apple },
+  { id: 3, img: orange },
+  { id: 4, name: "Pro-SG Whey Protein", img: product4 },
+  { id: 5, name: "Cocoz - Coconut Water Powder", img: product5 },
+  { id: 6, name: "Vita-SG Tablets", img: product6 },
 ];
 
 const OurProducts = () => {
@@ -47,7 +54,7 @@ const OurProducts = () => {
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
                 <button
                   onClick={() => navigate(`/detail-product/${product.id}`)}
-                  className="bg-white text-black px-3 py-1 sm:px-4 sm:py-2 font-semibold rounded-md shadow-md hover:bg-gray-200 transition"
+                  className="bg-white text-custom-purple px-3 py-1 sm:px-4 sm:py-2 font-semibold rounded-md shadow-md hover:bg-gray-200 transition"
                 >
                   Know More
                 </button>
@@ -61,7 +68,7 @@ const OurProducts = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: products.length * 0.2 }}
-        className="text-center mt-8 text-gray-900 text-lg md:text-xl font-semibold"
+        className="text-center mt-8 text-custom-purple text-lg md:text-xl font-semibold"
       >
         <p>New Products Coming Soon!</p>
       </motion.div>

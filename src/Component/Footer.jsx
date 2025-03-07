@@ -3,7 +3,7 @@ import { FaEnvelope, FaGlobe, FaWhatsapp, FaInstagram, FaFacebook } from "react-
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1E0065] text-white py-4">
+    <footer className="bg-[#1E0065] text-white py-4 mt-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0 px-4"> 
 
         {/* Contact Information */}
