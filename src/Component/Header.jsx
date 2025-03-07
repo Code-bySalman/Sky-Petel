@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from "../util/logo.jpg";
+const logo = require('../util/logo.jpg').default;
 import { NavLink, useLocation, Link } from "react-router-dom";
 import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
