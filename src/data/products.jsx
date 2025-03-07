@@ -16,7 +16,7 @@ export const products = [
       id: 2, 
       name: "SG-Lyte Apple", 
       img: apple,
-      description: "Heat vexhaustion leads to loss of Electrolytes,Energy & Fluid. Replenish with SG Lyte -Apple"
+      description: "Heat exhaustion leads to loss of Electrolytes,Energy & Fluid. Replenish with SG Lyte -Apple"
     },
     { 
       id: 3, 
@@ -34,7 +34,7 @@ export const products = [
       id: 5, 
       name: "Cocoz - Coconut Water Powder", 
       img: product5,
-      description: "Drink Anywhere, Anytime, Just Add Water. Daily Hydration Premix Contaiins essential minerals."
+      description: "Drink Anywhere, Anytime, Just Add Water. Daily Hydration Premix Contains essential minerals."
     },
     { 
       id: 6, 
