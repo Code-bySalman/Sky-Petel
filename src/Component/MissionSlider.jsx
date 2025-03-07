@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import missionSliderImg from "../util/missionSlider.jpg";
+import missionSliderImg from "../Util/missionSlider.jpg";
 
 const MissionSlider = ({
   title,

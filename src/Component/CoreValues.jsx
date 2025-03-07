@@ -1,7 +1,7 @@
 // CoreValues.js
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import imgMission from "../util/corevalue.jpg";
+import imgMission from "../Util/corevalue.jpg";
 
 const CoreValues = () => {
   const navigate = useNavigate();

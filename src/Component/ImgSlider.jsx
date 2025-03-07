@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import image1 from "../util/Homepage.jpg";
+import image1 from "../Util/Homepage.jpg";
 
 const ImgSlider = () => {
   const [showSlider, setShowSlider] = useState(false);

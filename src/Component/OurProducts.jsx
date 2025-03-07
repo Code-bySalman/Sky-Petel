@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-import lemon from "../util/lemon.jpg";
-import apple from "../util/apple.jpg";
-import orange from "../util/orange.jpg";
-import product4 from "../util/Product4.jpg";
-import product5 from "../util/Product5.jpg";
-import product6 from "../util/Product6.jpg";
+import lemon from "../Util/lemon.jpg";
+import apple from "../Util/apple.jpg";
+import orange from "../Util/orange.jpg";
+import product4 from "../Util/Product4.jpg";
+import product5 from "../Util/Product5.jpg";
+import product6 from "../Util/Product6.jpg";
 
 const products = [
   { id: 1, img: lemon },

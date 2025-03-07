@@ -1,9 +1,9 @@
-import lemon from "../util/lemon.jpg";
-import apple from "../util/apple.jpg";
-import orange from "../util/orange.jpg";
-import SGPRO from "../util/SGPRO.jpg";
-import product5 from "../util/Product5.jpg";
-import product6 from "../util/Product6.jpg";
+import lemon from "../Util/lemon.jpg";
+import apple from "../Util/apple.jpg";
+import orange from "../Util/orange.jpg";
+import SGPRO from "../Util/SGPRO.jpg";
+import product5 from "../Util/Product5.jpg";
+import product6 from "../Util/Product6.jpg";
 
 export const products = [
     { 
