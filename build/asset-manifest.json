@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.708df21e.css",
+    "main.js": "/static/js/main.12e58ce6.js",
+    "static/media/missionimg.jpg": "/static/media/missionimg.dd7aba53060cda91869b.jpg",
+    "static/media/corevalue.jpg": "/static/media/corevalue.e1af5ca84feb44ddbaf7.jpg",
+    "static/media/Homepage.jpg": "/static/media/Homepage.b7c1e0101817c2c0f1e0.jpg",
+    "static/media/SGPRO.jpg": "/static/media/SGPRO.bb0eb80228b97d2db005.jpg",
+    "static/media/missionSlider.jpg": "/static/media/missionSlider.5033c773a2b6305b04dd.jpg",
+    "static/media/Product5.jpg": "/static/media/Product5.0872eab9f9ba4797dc3a.jpg",
+    "static/media/Product4.jpg": "/static/media/Product4.3675fa66ab97f75f6dec.jpg",
+    "static/media/lemon.jpg": "/static/media/lemon.d2aa1968dfb564d1e152.jpg",
+    "static/media/orange.jpg": "/static/media/orange.8003cf9ec744a120d9e7.jpg",
+    "static/media/apple.jpg": "/static/media/apple.4f6620dfa709fce1a00a.jpg",
+    "static/media/Product6.jpg": "/static/media/Product6.8c540e253f4049ee89db.jpg",
+    "static/media/logo.jpg": "/static/media/logo.8fc5a8df3f64669c6cda.jpg",
+    "index.html": "/index.html",
+    "main.708df21e.css.map": "/static/css/main.708df21e.css.map",
+    "main.12e58ce6.js.map": "/static/js/main.12e58ce6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.708df21e.css",
+    "static/js/main.12e58ce6.js"
+  ]
+}
