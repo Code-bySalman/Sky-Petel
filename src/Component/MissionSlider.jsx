@@ -27,7 +27,7 @@ const MissionSlider = ({
   };
 
   return (
-    <div className="relative w-screen">
+    <div className="relative w-screen h-auto">
       {showImage && (
         <div
           className="w-screen h-96 md:h-[500px] lg:h-[600px]"
@@ -61,13 +61,13 @@ const MissionSlider = ({
 
       {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white w-11/12 md:w-1/2 lg:w-1/3 p-4 rounded-lg">
-            <h2 className="text-xl font-semibold text-blue-900 mb-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center  bg-black bg-opacity-50 w-full">
+          <div className="bg-white flex flex-wrap justify-center  md:w-1/2 lg:w-3/4 p-4 rounded-lg w-96">
+            <h2 className="text-2xl font-bold text-blue-900 mb-4  ">
               {title}
             </h2>
             <div className="max-h-96 overflow-y-auto px-4"> 
-              <p className="text-blue-900 text-sm md:text-base">
+              <p className="text-blue-900 text-md md:text-lg">
                 {description}
               </p>
             </div>

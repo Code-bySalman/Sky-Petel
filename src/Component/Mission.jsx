@@ -11,7 +11,7 @@ const Mission = () => {
       <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl mb-6 text-blue-900 text-center"> 
         Our Mission
       </h1>
-      <div className="flex flex-col-reverse md:flex-row bg-blue-100 h-auto md:h-[300px] w-full rounded-lg"> 
+      <div className="flex flex-col-reverse md:flex-row bg-blue-100  md:h-[300px] w-full rounded-lg"> 
         <div className="p-4 md:p-8 lg:p-12 w-full md:w-1/2"> 
           <p className="text-lg md:text-xl lg:text-2xl font-semibold text-blue-900 text-center md:text-left">
             Empowering Health, Enhancing Lives.

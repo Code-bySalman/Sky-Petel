@@ -21,9 +21,9 @@ const Contact = () => {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-blue-300 mt-8 mb-8"
+      className="min-h-screen flex items-center justify-center  mt-8 mb-8"
     >
-      <div className="max-w-xl mx-auto p-8 rounded-xl shadow-lg my-8 ">
+      <div className="max-w-xl mx-auto p-8 rounded-xl  my-8 ">
         <h2 className="text-4xl font-bold text-blue-900 mb-6 text-center">
           Contact Us
         </h2>
@@ -32,7 +32,7 @@ const Contact = () => {
           or feedback.
         </p>
 
-        <div className="p-6 rounded-lg shadow-md bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 transform transition duration-500 hover:scale-105">
+        <div className="p-6 rounded-lg shadow-md bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 transform transition duration-500 hover:scale-125">
           <div
             className="flex items-center text-blue-900 mb-4 cursor-pointer"
             onClick={handleEmailClick}
@@ -127,7 +127,7 @@ const Contact = () => {
         {/* Footer Message */}
         <div className="mt-8 text-center">
           <p className="text-sm text-blue-500 italic">
-            We're committed to delivering the best for you. Reach out anytime!
+            We're committed to delivering the best for you. 
           </p>
         </div>
       </div>

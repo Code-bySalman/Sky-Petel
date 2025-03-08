@@ -40,7 +40,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex flex-col md:flex-row justify-between items-center p-4 bg-blue-100">
+    <header className="flex flex-col w-screen md:flex-row justify-between items-center p-4 pr-10 bg-blue-100">
       <div className="flex items-center">
         <NavLink to={"/"}>
           <img src={logo} alt="logo-img" className="h-[45px] w-[95px] mr-5 bg-transparent" />

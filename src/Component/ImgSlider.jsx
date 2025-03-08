@@ -14,7 +14,7 @@ const ImgSlider = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
+    <div className="relative w-screen h-[400px] md:h-[500px] lg:h-[600px]">
       {/* Background Image */}
       <div className="w-full h-full">
         <img

@@ -26,7 +26,7 @@ const About = () => {
   }, [location]);
 
   return (
-    <div className="m-auto w-full">
+    <div className=" w-full ">
       <MissionSlider
         title="Our Mission"
         description="At Skypetel Global Healthcare Pvt Ltd, our leadership team brings over 37 years of extensive experience in establishing top healthcare brands. With a strong emphasis on team leadership, innovative marketing strategies, and effective customer partnership management, our directors possess deep expertise in the healthcare industry. Their proven skills and unwavering dedication to excellence pave the way for a promising future.
@@ -37,7 +37,7 @@ const About = () => {
           Our commitment goes beyond delivering products; we aim to create trust and hope through every step of our journey. As we expand our global footprint, we remain focused on making healthcare affordable, safe, and effective for diverse populations and contribute towards a healthier, more equitable world."
       />
 
-      <div className="bg-blue-100 p-4 rounded-lg shadow-md">
+      <div className="bg-blue-100 p-4 rounded-lg shadow-md h-auto">
         <section id="core-values" className="text-blue-900 py-8 ">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-2 pb-5">
             Our Core Values
