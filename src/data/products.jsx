@@ -21,7 +21,7 @@ export const products = [
   },
   { 
     id: 2, 
-    name: "SG-Lyte Apple", 
+    name: "SG-Lyte ", 
     img: apple,
     description: "Heat exhaustion leads to loss of electrolytes, energy & fluid. Replenish with SG Lyte - Apple.",
     bulletPoints: [
@@ -34,13 +34,13 @@ export const products = [
   },
   { 
     id: 3, 
-    name: "SG-Lyte Orange", 
+    name: "SG-Lyte+",
     img: orange,
     description: "SG-Lyte Electrolyte range that helps in fever conditions like Typhoid and Dengue.",
     bulletPoints: [
      "Sodium:-Maintains fluid & Acid Base Balance & Co Transport in glucose absorption.",
       "Potassium:- Ensures proper functioning of Muscle & Nerves. Helps intra cellular fluid balance.",
-      "Chloride:- Miantain body Fluids balance. Facilitate flow of Oxygen & Carbondioxide within body cells.",
+      "Chloride:- Maintains body Fluids balance. Facilitate flow of Oxygen & Carbondioxide within body cells.",
       "Enriched with Vitamin-C"
     ]
   },

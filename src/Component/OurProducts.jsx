@@ -47,7 +47,7 @@ const OurProducts = () => {
   };
 
   return (
-    <div ref={sectionRef} className="bg-white py-16 px-5 flex flex-col items-center">
+    <div ref={sectionRef} className="bg-blue-100 py-16 px-5 flex flex-col items-center">
       <h2 className="text-3xl md:text-4xl font-bold text-custom-purple text-center tracking-tight">
         Our Products
       </h2>

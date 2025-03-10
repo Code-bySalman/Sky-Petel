@@ -45,7 +45,7 @@ const DetailProduct = () => {
             className="md:w-1/2 p-8"
           >
             <h2 className="text-4xl font-bold text-custom-purple">{product.name}</h2>
-            <p className="text-lg text-gray-700 mt-3">{product.description || "No description available."}</p>
+            <p className="text-xl text-gray-700 mt-3">{product.description || "No description available."}</p>
 
             {/* Bullet Points (If Available) */}
             {product.bulletPoints && (
