@@ -14,7 +14,7 @@ const DetailProduct = () => {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 px-6">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br bg-blue-100">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

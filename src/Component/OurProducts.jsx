@@ -7,7 +7,7 @@ import lemon from "../Util/lemon.jpg";
 import apple from "../Util/apple.jpg";
 import orange from "../Util/orange.jpg";
 import whey from "../Util/Product4.jpg";
-import product5 from "../Util/Product5.jpg";
+import product5 from "../Util/Product5.png";
 import product6 from "../Util/Product6.jpg";
 
 const products = [
@@ -47,7 +47,7 @@ const OurProducts = () => {
   };
 
   return (
-    <div ref={sectionRef} className="bg-blue-100 py-16 px-5 flex flex-col items-center">
+    <div ref={sectionRef} className="bg-white py-16 px-5 flex flex-col items-center">
       <h2 className="text-3xl md:text-4xl font-bold text-custom-purple text-center tracking-tight">
         Our Products
       </h2>
