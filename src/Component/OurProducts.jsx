@@ -6,7 +6,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import lemon from "../Util/lemon.jpg";
 import apple from "../Util/apple.jpg";
 import orange from "../Util/orange.jpg";
-import whey from "../Util/product4.jpg";
+import whey from "../Util/Product4.jpg";
 import product5 from "../Util/Product5.jpg";
 import product6 from "../Util/Product6.jpg";
 
