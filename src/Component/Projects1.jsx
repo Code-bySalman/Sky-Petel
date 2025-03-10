@@ -33,7 +33,7 @@ const Project1 = () => {
           <img
             src={OurProduct}
             alt="imgMission"
-            className="h-auto max-h-[300px] w-full max-w-[400px] object-contain rounded-lg"
+            className="mt-10 h-auto max-h-[300px] w-full max-w-[400px] object-contain rounded-lg"
           />
         </div>
       </div>

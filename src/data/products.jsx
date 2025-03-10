@@ -24,7 +24,7 @@ export const products = [
     id: 2, 
     name: "SG Lyte",
     img: apple,
-    description: "Heat exhaustion leads to loss of electrolytes, energy & fluid. Replenish with SG Lyte - Apple.",
+    description: "Heat exhaustion leads to loss of electrolytes, energy & fluid. Replenish with SG Lyte ",
     bulletPoints: [
       "Specially designed for faster hydration.",
       "Provides an instant boost of energy.",
@@ -37,7 +37,7 @@ export const products = [
     id: 3, 
     name: "SG Lyte Plus",
     img: orange,
-    description: "SG-Lyte Electrolyte range that helps in fever conditions like Typhoid and Dengue.",
+    description: "SG Lyte Electrolyte range that helps in fever conditions like Typhoid and Dengue.",
     bulletPoints: [
      "Sodium:-Maintains fluid & Acid Base Balance & Co Transport in glucose absorption.",
       "Potassium:- Ensures proper functioning of Muscle & Nerves. Helps intra cellular fluid balance.",
@@ -49,8 +49,8 @@ export const products = [
     id: 4, 
     name: "Pro-SG ", 
     img: SGPRO,
-    description1:"Pro-SG",
-    description2:"Whey Protien",
+    
+    description2:"Protein Powder",
     
     description: "High-quality whey protein to fuel muscle growth and post-workout recovery.",
     bulletPoints: [
