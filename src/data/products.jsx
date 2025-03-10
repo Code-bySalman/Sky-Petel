@@ -2,7 +2,7 @@ import lemon from "../Util/lemon.jpg";
 import apple from "../Util/apple.jpg";
 import orange from "../Util/orange.jpg";
 import SGPRO from "../Util/SGPRO.jpg";
-import product5 from "../Util/Product5.jpg";
+import product5 from "../Util/Product5.png";
 import product6 from "../Util/Product6.jpg";
 
 export const products = [
