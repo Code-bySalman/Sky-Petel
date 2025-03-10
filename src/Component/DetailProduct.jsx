@@ -10,7 +10,11 @@ const DetailProduct = () => {
   const product = products.find((p) => p.id === id);
 
   if (!product) {
-    return <div className="text-center text-2xl text-gray-700 mt-20 font-semibold">Product not found</div>;
+    return (
+      <div className="text-center text-2xl text-gray-700 mt-20 font-semibold">
+        Product not found
+      </div>
+    );
   }
 
   return (
@@ -22,9 +26,8 @@ const DetailProduct = () => {
         className="w-full max-w-5xl bg-white shadow-xl rounded-2xl overflow-hidden transform hover:shadow-2xl transition-shadow duration-300"
       >
         <div className="flex flex-col md:flex-row">
-          
           {/* Product Image Section */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
@@ -33,34 +36,48 @@ const DetailProduct = () => {
             <img
               src={product.img}
               alt={product.name}
-              className="max-h-96 object-contain rounded-lg transition-transform duration-300 hover:scale-105"
+              className="max-h-96 w-full object-contain rounded-lg transition-transform duration-300 hover:scale-105"
+              style={{ aspectRatio: "4/3" }} // Ensures aspect ratio consistency
             />
           </motion.div>
 
           {/* Product Details */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
             className="md:w-1/2 p-8 flex flex-col justify-center text-center md:text-left"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-custom-purple">{product.name}</h2>
-            <p className="text-lg md:text-2xl font-semibold text-blue-900 mt-3">{product.description1}</p>
-            <p className="text-base md:text-xl text-blue-900 mt-3">{product.description2}</p>
-            <p className="text-base md:text-xl text-blue-900 mt-3">{product.description}</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-custom-purple">
+              {product.name}
+            </h2>
+            {product.description1 && (
+              <p className="text-lg md:text-2xl font-semibold text-blue-900 mt-3">
+                {product.description1}
+              </p>
+            )}
+            {product.description2 && (
+              <p className="text-base md:text-xl text-blue-900 mt-3">
+                {product.description2}
+              </p>
+            )}
+            <p className="text-base md:text-xl text-blue-900 mt-3">
+              {product.description}
+            </p>
 
             {/* Bullet Points (If Available) */}
             {product.bulletPoints && (
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 text-left">
                 {product.bulletPoints.map((point, index) => (
-                  <motion.li 
+                  <motion.li
                     key={index}
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.6 + index * 0.1 }}
-                    className="text-blue-900 flex items-center justify-center md:justify-start"
+                    className="text-blue-900 flex items-start"
                   >
-                    <span className="text-custom-purple text-lg mr-2">•</span> {point}
+                    <span className="text-custom-purple text-lg mr-2">•</span>
+                    {point}
                   </motion.li>
                 ))}
               </ul>
@@ -69,14 +86,13 @@ const DetailProduct = () => {
             {/* Back Button */}
             <motion.button
               onClick={() => navigate("/our-products")}
-              whileHover={{ scale: 1.05 }} 
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="mt-6 px-6 py-3 text-lg font-semibold text-custom-purple bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition-all"
             >
               ← Back to Products
             </motion.button>
           </motion.div>
-
         </div>
       </motion.div>
     </div>

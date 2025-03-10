@@ -38,6 +38,7 @@ export const products = [
     name: "SG Lyte Plus",
     img: orange,
     description: "SG Lyte Electrolyte range that helps in fever conditions like Typhoid and Dengue.",
+    
     bulletPoints: [
      "Sodium:-Maintains fluid & Acid Base Balance & Co Transport in glucose absorption.",
       "Potassium:- Ensures proper functioning of Muscle & Nerves. Helps intra cellular fluid balance.",
@@ -77,7 +78,7 @@ export const products = [
   },
   { 
     id: 6, 
-    name: "Vita-SG TabletS.",
+    name: "Vita-SG Tablets.",
     img: product6,
     description: "Methylcobalamin, Pyridoxal 5-Phosphate, L-Methylfolate & Vitamin D3 Tablets.",
     bulletPoints: [
