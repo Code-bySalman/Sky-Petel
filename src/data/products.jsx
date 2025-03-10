@@ -12,11 +12,11 @@ export const products = [
     img: lemon,
     description: "SG-Lyte Electrolyte range helps with nausea and vomiting. Enriched with vitamin C and essential minerals.",
     bulletPoints: [
-      "Restores electrolytes lost due to dehydration.",
-      "Rich in Vitamin C for immune support.",
-      "Contains essential minerals: Sodium, Potassium, and Chloride.",
-      "Helps in recovery from fatigue and weakness.",
-      "Ideal for people with dehydration due to illness or exercise."
+      "Sodium:-Maintains fluid & Acid Base Balance & Co Transport in glucose absorption.",
+      "Potassium:- Ensures proper functioning of Muscle & Nerves. Helps intra cellular fluid balance.",
+      "Chloride:- Miantain body Fluids balance. Facilitate flow of Oxygen & Carbondioxide within body cells.",
+      "Enriched with Vitamin-C"
+     
     ]
   },
   { 
@@ -38,11 +38,10 @@ export const products = [
     img: orange,
     description: "SG-Lyte Electrolyte range that helps in fever conditions like Typhoid and Dengue.",
     bulletPoints: [
-      "Packed with vitamins and minerals for a faster recovery.",
-      "Provides 102Kcal* energy per serving.",
-      "Supports hydration and electrolyte balance.",
-      "Recommended for patients with fever, vomiting, and weakness.",
-      "Delicious orange flavor for better intake compliance."
+     "Sodium:-Maintains fluid & Acid Base Balance & Co Transport in glucose absorption.",
+      "Potassium:- Ensures proper functioning of Muscle & Nerves. Helps intra cellular fluid balance.",
+      "Chloride:- Miantain body Fluids balance. Facilitate flow of Oxygen & Carbondioxide within body cells.",
+      "Enriched with Vitamin-C"
     ]
   },
   { 
