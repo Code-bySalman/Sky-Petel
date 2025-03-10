@@ -10,7 +10,8 @@ export const products = [
     id: 1, 
     name: "SG Lyte", 
     img: lemon,
-    description: "SG-Lyte Electrolyte range helps with nausea and vomiting. Enriched with vitamin C and essential minerals.",
+    descriptio1:"SG-Lyte Electrolyte range helps with nausea and vomiting",
+    description: "Enriched with vitamin C and essential minerals.",
     bulletPoints: [
       "Sodium:-Maintains fluid & Acid Base Balance & Co Transport in glucose absorption.",
       "Potassium:- Ensures proper functioning of Muscle & Nerves. Helps intra cellular fluid balance.",
@@ -21,7 +22,7 @@ export const products = [
   },
   { 
     id: 2, 
-    name: "SG-Lyte ", 
+    name: "SG Lyte",
     img: apple,
     description: "Heat exhaustion leads to loss of electrolytes, energy & fluid. Replenish with SG Lyte - Apple.",
     bulletPoints: [
@@ -34,7 +35,7 @@ export const products = [
   },
   { 
     id: 3, 
-    name: "SG-Lyte+",
+    name: "SG Lyte Plus",
     img: orange,
     description: "SG-Lyte Electrolyte range that helps in fever conditions like Typhoid and Dengue.",
     bulletPoints: [
@@ -46,8 +47,11 @@ export const products = [
   },
   { 
     id: 4, 
-    name: "Pro-SG Whey Protein", 
+    name: "Pro-SG ", 
     img: SGPRO,
+    description1:"Pro-SG",
+    description2:"Whey Protien",
+    
     description: "High-quality whey protein to fuel muscle growth and post-workout recovery.",
     bulletPoints: [
       "Contains Whey Protein, DHA, and Multivitamins.",
@@ -59,8 +63,9 @@ export const products = [
   },
   { 
     id: 5, 
-    name: "Cocoz - Coconut Water Powder", 
+    name: "Cocoz", 
     img: product5,
+    description1:"Coconut Water Powder",
     description: "Drink anywhere, anytime, just add water! A daily hydration premix packed with essential minerals.",
     bulletPoints: [
       "Instantly replenishes hydration levels.",
@@ -72,7 +77,7 @@ export const products = [
   },
   { 
     id: 6, 
-    name: "Vita-SG Tablet", 
+    name: "Vita-SG TabletS.",
     img: product6,
     description: "Methylcobalamin, Pyridoxal 5-Phosphate, L-Methylfolate & Vitamin D3 Tablets.",
     bulletPoints: [

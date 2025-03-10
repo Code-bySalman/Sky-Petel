@@ -10,9 +10,9 @@ const Project1 = () => {
   };
 
   return (
-    <div className="mt-16 px-4 md:px-8 lg:px-16 mb-10">
+    <div className="mt-10 md:mt-16 px-4 md:px-8 lg:px-16 mb-10">  
       <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl mb-6 text-blue-900 text-center">
-        Our Products.
+        Our Products
       </h1>
       <div className="flex flex-col-reverse md:flex-row bg-blue-100 h-auto md:h-[300px] w-full rounded-lg">
         {/* Left Text Section */}

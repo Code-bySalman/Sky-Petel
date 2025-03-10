@@ -14,7 +14,7 @@ const DetailProduct = () => {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br bg-blue-100">
+    <div className="flex items-center justify-center min-h-screen  bg-blue-100">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -44,8 +44,10 @@ const DetailProduct = () => {
             transition={{ delay: 0.4, duration: 0.7 }}
             className="md:w-1/2 p-8"
           >
-            <h2 className="text-4xl font-bold text-custom-purple">{product.name}</h2>
-            <p className="text-xl text-gray-700 mt-3">{product.description || "No description available."}</p>
+            <h2 className="text-4xl font-bold ml-40 text-custom-purple">{product.name}</h2>
+            <p className="text-2xl font-semibold text-blue-900  mt-3">{product.description1 }</p>
+            <p className="text-xl text-blue-900 mt-3">{product.description2}</p>
+            <p className="text-xl text-blue-900 mt-3">{product.description}</p>
 
             {/* Bullet Points (If Available) */}
             {product.bulletPoints && (
@@ -56,7 +58,7 @@ const DetailProduct = () => {
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.6 + index * 0.1 }}
-                    className="text-gray-600 flex items-center"
+                    className="text-blue-900 flex items-center"
                   >
                     <span className="text-custom-purple text-lg mr-2">•</span> {point}
                   </motion.li>
