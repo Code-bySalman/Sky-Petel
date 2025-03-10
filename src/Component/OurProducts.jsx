@@ -8,7 +8,7 @@ import apple from "../Util/apple.jpg";
 import orange from "../Util/orange.jpg";
 import whey from "../Util/Product4.jpg";
 import product5 from "../Util/Product5.png";
-import product6 from "../Util/Product6.jpg";
+import product6 from "../Util/Product6.png";
 
 const products = [
   { id: 1, name: "Lemon", img: lemon },
