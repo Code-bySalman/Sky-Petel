@@ -23,49 +23,62 @@ const DetailProduct = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
+        whileHover={{ scale: 1.02 }}
         className="w-full max-w-5xl bg-white shadow-xl rounded-2xl overflow-hidden transform hover:shadow-2xl transition-shadow duration-300"
       >
         <div className="flex flex-col md:flex-row">
-          {/* Product Image Section */}
+          
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
             className="md:w-1/2 bg-gray-100 flex items-center justify-center p-6"
           >
-            <img
+            <motion.img
               src={product.img}
               alt={product.name}
-              className="max-h-96 w-full object-contain rounded-lg transition-transform duration-300 hover:scale-105"
-              style={{ aspectRatio: "4/3" }} // Ensures aspect ratio consistency
+              className="max-h-96 w-full object-contain rounded-lg transition-transform duration-300"
+              style={{ aspectRatio: "4/3" }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
             />
           </motion.div>
 
-          {/* Product Details */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
             className="md:w-1/2 p-8 flex flex-col justify-center text-center md:text-left"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-custom-purple">
+            <motion.h2
+              className="text-3xl md:text-4xl font-bold text-custom-purple"
+              whileHover={{ scale: 1.05 }}
+            >
               {product.name}
-            </h2>
+            </motion.h2>
             {product.description1 && (
-              <p className="text-lg md:text-2xl font-semibold text-blue-900 mt-3">
+              <motion.p
+                className="text-lg md:text-2xl font-semibold text-blue-900 mt-3"
+                whileHover={{ scale: 1.03 }}
+              >
                 {product.description1}
-              </p>
+              </motion.p>
             )}
             {product.description2 && (
-              <p className="text-base md:text-xl text-blue-900 mt-3">
+              <motion.p
+                className="text-base md:text-xl text-blue-900 mt-3"
+                whileHover={{ scale: 1.03 }}
+              >
                 {product.description2}
-              </p>
+              </motion.p>
             )}
-            <p className="text-base md:text-xl text-blue-900 mt-3">
+            <motion.p
+              className="text-base md:text-xl text-blue-900 mt-3"
+              whileHover={{ scale: 1.03 }}
+            >
               {product.description}
-            </p>
+            </motion.p>
 
-            {/* Bullet Points (If Available) */}
             {product.bulletPoints && (
               <ul className="mt-4 space-y-2 text-left">
                 {product.bulletPoints.map((point, index) => (
@@ -75,6 +88,7 @@ const DetailProduct = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.6 + index * 0.1 }}
                     className="text-blue-900 flex items-start"
+                    whileHover={{ scale: 1.05 }}
                   >
                     <span className="text-custom-purple text-lg mr-2">•</span>
                     {point}
@@ -83,7 +97,6 @@ const DetailProduct = () => {
               </ul>
             )}
 
-            {/* Back Button */}
             <motion.button
               onClick={() => navigate("/our-products")}
               whileHover={{ scale: 1.05 }}

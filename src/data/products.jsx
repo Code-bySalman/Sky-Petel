@@ -8,7 +8,7 @@ import product6 from "../Util/Product6.png";
 export const products = [
   { 
     id: 1, 
-    name: "SG Lyte", 
+    name: "SG Lyte Lemon", 
     img: lemon,
     descriptio1:"SG-Lyte Electrolyte range helps with nausea and vomiting",
     description: "Enriched with vitamin C and essential minerals.",
@@ -22,7 +22,7 @@ export const products = [
   },
   { 
     id: 2, 
-    name: "SG Lyte",
+    name: "SG Lyte Apple",
     img: apple,
     description: "Heat exhaustion leads to loss of electrolytes, energy & fluid. Replenish with SG Lyte ",
     bulletPoints: [

@@ -12,9 +12,9 @@ import "./index.css";
 
 const AppLayout = () => {
     return (
-        <div>
+        <div className="pt-[80px]">
             <Header />
-            <Outlet /> {/* Renders the nested components */}
+            <Outlet /> 
             <Footer />
         </div>
     );
@@ -29,7 +29,7 @@ const route = createBrowserRouter([
             { path: "/about-us", element: <About /> },
             { path: "/our-products", element: <OurProducts /> },
             { path: "/contact-us", element: <Contact /> },
-            { path: "/detail-product/:productId", element: <DetailProduct /> }, // ✅ Added this route
+            { path: "/detail-product/:productId", element: <DetailProduct /> }, 
         ]
     }
 ]);
