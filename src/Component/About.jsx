@@ -69,9 +69,8 @@ const About = () => {
           Our commitment goes beyond delivering products; we aim to create trust and hope through every step of our journey. As we expand our global footprint, we remain focused on making healthcare affordable, safe, and effective for diverse populations and contribute towards a healthier, more equitable world."
       />
 
-      {/* Section Container */}
       <div className="max-w-6xl mx-auto px-6">
-        {/* Core Values Section */}
+       
         <motion.section
           id="core-values"
           className="py-12"
@@ -99,7 +98,6 @@ const About = () => {
           </div>
         </motion.section>
 
-        {/* Unique Identity Section */}
         <motion.section
           id="unique-identity"
           className="py-12"
@@ -139,7 +137,6 @@ const About = () => {
           </div>
         </motion.section>
 
-        {/* Purpose Statement Section */}
         <motion.section
           id="purpose-statement"
           className="py-12"

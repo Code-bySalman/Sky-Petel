@@ -15,7 +15,7 @@ const Project1 = () => {
         Our Products
       </h1>
       <div className="flex flex-col-reverse md:flex-row bg-blue-100 h-auto md:h-[300px] w-full rounded-lg">
-        {/* Left Text Section */}
+       
         <div className="p-4 md:p-8 lg:p-12 w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">
           <p className="text-lg md:text-xl lg:text-2xl font-semibold text-blue-900">
             Explore Our Comprehensive Product Range!
@@ -28,7 +28,6 @@ const Project1 = () => {
           </button>
         </div>
 
-        {/* Right Image Section */}
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <img
             src={OurProduct}
