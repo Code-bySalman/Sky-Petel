@@ -6,7 +6,7 @@ import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid
 const Header = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
   const toggleMobileMenu = () => {
@@ -30,29 +30,20 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-blue-100 shadow-md">
       <div className="flex flex-col md:flex-row justify-between items-center p-4 pr-10">
-        {/* Logo */}
         <div className="flex items-center">
           <NavLink to={"/"}>
             <img src={logo} alt="logo-img" className="h-[45px] w-[95px] mr-5 bg-transparent" />
           </NavLink>
           <h1
             style={{ color: "#1E0065" }}
-            className="font-roboto font-bold text-[18px] md:text-[30px] lg:text-[40px] cursor-pointer ml-10 md:ml-3"
+            className="font-roboto font-bold text-[18px] md:text-[30px] lg:text-[40px] ml-10 md:ml-3 cursor-pointer"
           >
             SKYPETEL GLOBAL HEALTHCARE
           </h1>
         </div>
-
-        {/* Mobile Menu Button */}
         <button className="md:hidden text-blue-900 mt-2" onClick={toggleMobileMenu}>
-          {isMobileMenuOpen ? (
-            <XMarkIcon className="w-6 h-6" />
-          ) : (
-            <Bars3Icon className="w-6 h-6" />
-          )}
+          {isMobileMenuOpen ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
         </button>
-
-        {/* Navigation Menu */}
         <nav className={`${isMobileMenuOpen ? "block" : "hidden"} md:block mt-4 md:mt-0`}>
           <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 justify-center items-center">
             {location.pathname !== "/" && (
@@ -70,8 +61,6 @@ const Header = () => {
                 </NavLink>
               </li>
             )}
-
-            {/* About Us Dropdown */}
             <li className="relative group" ref={dropdownRef}>
               <button
                 className="text-blue-900 font-semibold text-[18px] md:text-[18px] lg:text-[20px] flex items-center"
@@ -80,11 +69,8 @@ const Header = () => {
                 About Us
                 <ChevronDownIcon className="w-4 h-4 ml-2" />
               </button>
-
               {isDropdownOpen && (
-                <ul
-                  className="absolute top-full left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg z-10 opacity-100 scale-100 transform transition-all duration-200 ease-in-out"
-                >
+                <ul className="absolute top-full left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg z-10 opacity-100 scale-100 transform transition-all duration-200 ease-in-out">
                   <Link to="/about-us" onClick={() => setIsDropdownOpen(false)}>
                     <li className="flex justify-center py-2 hover:bg-gray-200 cursor-pointer text-blue-900">
                       Our Mission
@@ -118,7 +104,6 @@ const Header = () => {
                 </ul>
               )}
             </li>
-
             <li>
               <NavLink
                 to="/our-products"
@@ -131,7 +116,6 @@ const Header = () => {
                 Our Products
               </NavLink>
             </li>
-
             <li>
               <NavLink
                 to="/contact-us"
