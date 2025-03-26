@@ -6,20 +6,17 @@ import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid
 const Header = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Ensure dropdown is closed initially
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
   const dropdownRef = useRef(null);
 
-  // Toggle mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Toggle dropdown menu
   const toggleDropdown = () => {
     setIsDropdownOpen((prev) => !prev);
   };
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -40,7 +37,7 @@ const Header = () => {
           </NavLink>
           <h1
             style={{ color: "#1E0065" }}
-            className="font-roboto font-bold text-[18px] ml-10 md:text-[40px] md:ml-3 cursor-pointer"
+            className="font-roboto font-bold text-[18px] md:text-[30px] lg:text-[40px] cursor-pointer ml-10 md:ml-3"
           >
             SKYPETEL GLOBAL HEALTHCARE
           </h1>
@@ -64,8 +61,8 @@ const Header = () => {
                   to="/"
                   className={({ isActive }) =>
                     isActive
-                      ? "text-custom-purple font-bold text-[18px] md:text-[22px] border-b-2 border-blue-500"
-                      : "text-custom-purple font-semibold text-[18px] md:text-[22px] hover:text-blue-500 transition duration-300 relative group"
+                      ? "text-custom-purple font-bold text-[18px] md:text-[18px] lg:text-[22px] border-b-2 border-blue-500"
+                      : "text-custom-purple font-semibold text-[18px] md:text-[18px] lg:text-[22px] hover:text-blue-500 transition duration-300 relative group"
                   }
                 >
                   Home
@@ -77,7 +74,7 @@ const Header = () => {
             {/* About Us Dropdown */}
             <li className="relative group" ref={dropdownRef}>
               <button
-                className="text-blue-900 font-semibold text-[18px] md:text-[20px] flex items-center"
+                className="text-blue-900 font-semibold text-[18px] md:text-[18px] lg:text-[20px] flex items-center"
                 onClick={toggleDropdown}
               >
                 About Us
@@ -127,8 +124,8 @@ const Header = () => {
                 to="/our-products"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-custom-purple font-bold text-[18px] md:text-[20px] border-b-2 border-blue-500"
-                    : "text-custom-purple font-semibold text-[18px] md:text-[20px] hover:text-blue-500 transition duration-300"
+                    ? "text-custom-purple font-bold text-[18px] md:text-[18px] lg:text-[20px] border-b-2 border-blue-500"
+                    : "text-custom-purple font-semibold text-[18px] md:text-[18px] lg:text-[20px] hover:text-blue-500 transition duration-300"
                 }
               >
                 Our Products
@@ -140,8 +137,8 @@ const Header = () => {
                 to="/contact-us"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-custom-purple font-bold text-[18px] md:text-[20px] border-b-2 border-blue-500"
-                    : "text-custom-purple font-semibold text-[18px] md:text-[20px] hover:text-blue-500 transition duration-300"
+                    ? "text-custom-purple font-bold text-[18px] md:text-[18px] lg:text-[20px] border-b-2 border-blue-500"
+                    : "text-custom-purple font-semibold text-[18px] md:text-[18px] lg:text-[20px] hover:text-blue-500 transition duration-300"
                 }
               >
                 Contact Us
